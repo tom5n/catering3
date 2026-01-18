@@ -1,0 +1,230 @@
+.contact {
+  padding: 100px 0;
+  background-color: #121212;
+  color: var(--color-white);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: clamp(16px, 1.2vw, 18px);
+  color: rgba(251, 251, 251, 0.75);
+  line-height: 2;
+  letter-spacing: 0.02em;
+  max-width: 500px;
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.infoLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(251, 251, 251, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.infoValue {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: clamp(16px, 1.1vw, 18px);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.infoValue:hover {
+  opacity: 0.7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(251, 251, 251, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.input,
+.select,
+.textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  padding: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--color-white);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23FBFBFB' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+@media (max-width: 968px) {
+  .contact {
+    padding: 100px 0;
+  }
+  
+  .sectionLabel {
+    margin-bottom: 4rem;
+  }
+  
+  .content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 0;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .sectionLabel {
+    margin-bottom: 3rem;
+    font-size: 11px;
+  }
+  
+  .content {
+    gap: 3rem;
+  }
+  
+  .textBlock {
+    gap: 2rem;
+  }
+  
+  .form {
+    gap: 1.5rem;
+  }
+  
+  .formRow {
+    gap: 1.5rem;
+  }
+  
+  .submitButton {
+    width: 100%;
+    align-self: stretch;
+  }
+}

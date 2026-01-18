@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-black: #121212;
+  --color-white: #FBFBFB;
+}
+
+html {
+  /* scroll-behavior handled by Lenis */
+}
+
+body {
+  font-family: 'Syncopate', sans-serif;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syncopate', sans-serif;
+}
