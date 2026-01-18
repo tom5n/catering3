@@ -10,7 +10,7 @@ export default function Footer() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
     if (lenis) {
-      const element = document.querySelector(href)
+      const element = document.querySelector(href) as HTMLElement | null
       if (element) {
         lenis.scrollTo(element, {
           offset: -80,
